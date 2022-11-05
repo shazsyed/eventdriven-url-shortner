@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.short-btn {
+  @apply bg-blue-200 h-auto p-2 px-4 bg-opacity-20 text-blue-200 font-semibold rounded-md;
+}
+
+.input-field {
+  @apply font-normal text-base text-grey bg-[#F5F5F5] rounded-md py-4 px-5 min-w-full;
+}
+

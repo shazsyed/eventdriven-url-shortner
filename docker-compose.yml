@@ -1,0 +1,22 @@
+version: "2.2"
+services:
+  nginx:
+    build: ./client/
+    image: shortner/client
+    container_name: client
+    ports:
+      - "80:80"
+    networks:
+      - proxynet
+
+  rabbitmq:
+    image: rabbitmq:alpine
+    ports:
+      - 5672:5672 # AMQP protocol port
+      - 15672:15672 # HTTP management UI
+    networks:
+      - proxynet
+
+networks:
+  proxynet:
+    name: shortner_network

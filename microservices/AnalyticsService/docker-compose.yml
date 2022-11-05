@@ -1,0 +1,27 @@
+version: '3.5'
+services:
+  analytics:
+    build: ./
+    container_name: analytics
+    image: shortner/analytics
+    environment:
+      - NODE_ENV=DEV
+      - PORT=80
+      - MONGO_URL=mongodb://db:27017/analytics
+      - RABBITMQ_URL=amqp://guest:guest@rabbitmq:5672/
+    networks:
+      - proxynet
+    depends_on:
+      - db
+    
+  db:
+    image: mongo:latest
+    container_name: analytics_db
+    volumes:
+      - ./data:/data/db
+    networks:
+      - proxynet
+      
+networks:
+  proxynet:
+    name: shortner_network
