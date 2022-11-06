@@ -1,13 +1,26 @@
 # eventdriven-url-shortner
 A URL shortner created upon event driven microservice architecture with frontend developed in ReactJS and backend with NodeJS.
 
+### Web UI
+<details>
+  <summary>Home</summary>
+  <img src="https://i.imgur.com/6oCBSlU.png"> 
+</details>
+
+<details>
+  <summary>Track Link</summary>
+  <img src="https://i.imgur.com/Je8RyMf.png">
+</details>
+
 ### Application Architecture
 There are two microservices each with its own database and all the communication between these services are through RabbitMQ message queues. NGINX is used as a reverse proxy to forward the requests to their respective service and as a web server to serve the client application.
 
 1. Link Management Service
 2. Analytics Service
 
-![diagram](diagram.png)
+<p align="center">
+<img src="https://github.com/shazsyed/eventdriven-url-shortner/blob/main/diagram.png" width="800">
+</p>
 
 ### Installation
 
@@ -35,12 +48,8 @@ $ docker-compose -f AnalyticsService/docker-compose.yml up --build
 
 **Your Docker containers should look like this**
 
-![containers](containers.png)
+<img src="https://i.imgur.com/sEqpHwB.png" width="600">
 
 ## Shortner should be listening on `http://localhost:80/`
 
-### Web UI
 
-![home](home.png)
-
-![track](track.png)
