@@ -2,6 +2,8 @@
 A URL shortner created upon event driven microservice architecture with frontend developed in ReactJS and backend with NodeJS.
 
 ### Web UI
+Frontend built using ReactJS and Tailwind CSS
+
 <details>
   <summary>Home</summary>
   <img src="https://i.imgur.com/6oCBSlU.png"> 
@@ -19,7 +21,7 @@ There are two microservices each with its own database and all the communication
 2. Analytics Service
 
 <p align="center">
-<img src="https://github.com/shazsyed/eventdriven-url-shortner/blob/main/diagram.png" width="800">
+<img src="https://github.com/shazsyed/eventdriven-url-shortner/blob/main/diagram.png" width="900">
 </p>
 
 ### Installation
@@ -52,4 +54,7 @@ $ docker-compose -f AnalyticsService/docker-compose.yml up --build
 
 ## Shortner should be listening on `http://localhost:80/`
 
+#### My Thoughts
+
+The purpose for this project was to explore microservice architecture and learn how modern applications are developed, during the development of this project I came across problems which were specific to a microservice architecture and learned about some patterns which are implemented to mitigate them. This project became a huge reason for me to learn Typescript and use it frequently in future.
 
