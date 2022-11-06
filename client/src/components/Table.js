@@ -29,7 +29,7 @@ const Table = (props) => {
           return (
             <tr key={obj.source} className={`border-b text-center ${props.capitalize ? "capitalize" : ""}`}>
               <td className="text-sm text-gray-900 px-4 py-2 whitespace-nowrap">
-                {obj.source}
+                {obj.source.replaceAll("_", ".")}
               </td>
               <td className="text-sm text-gray-900 px-4 py-2 whitespace-nowrap">
                 {obj.clicks}

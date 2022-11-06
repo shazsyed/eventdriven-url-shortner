@@ -10,7 +10,7 @@ import "react-loading-skeleton/dist/skeleton.css"
 function App() {
   return (
     <>
-      <div className="font-montserrat md:px-80 p-5 md:py-5 h-screen overflow-hidden">
+      <div className="font-montserrat md:px-80 p-5 md:py-5 h-screen">
         <SkeletonTheme
           baseColor="#00a3ff33"
           highlightColor="#96c7ff"
