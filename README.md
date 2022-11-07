@@ -29,7 +29,7 @@ There are two microservices each with its own database and all the communication
 #### 1. Pull the repository on your local machine
 
 ```
-$ git pull https://github.com/shazsyed/eventdriven-url-shortner
+$ git clone https://github.com/shazsyed/eventdriven-url-shortner
 ```
 
 #### 2. Creating NGINX & RabbitMQ containers
